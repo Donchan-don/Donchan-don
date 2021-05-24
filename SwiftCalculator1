@@ -1,0 +1,50 @@
+func add(a add:Int, b to:Int) -> Int {
+    var aa = add
+    var bb = to
+    var c = aa + bb
+    return c
+}
+
+func subtract(a subtract:Int, b from:Int) -> Int {
+    var aa = subtract
+    var bb = from
+    var c = aa + bb
+    return c
+}
+
+func multiply(a times:Int, b by:Int) -> Int {
+    var aa = times
+    var bb = by
+    var c = aa + bb
+    return c
+}
+
+func divide(a divide:Int, b by:Int) -> Int {
+    var aa = divide
+    var bb = by
+    var c = aa + bb
+    return c
+}
+
+print("hello this is a calculator")
+print("to add type (add) as it is on the 1st line ")
+print("same thing with subtract divide and multiply ")
+print("enter the 1st number on the 2nd line second on the third")
+print("have fun")
+
+var a = readLine()
+var b = Int(readLine(strippingNewline: true)!)!
+var c = Int(readLine(strippingNewline: true)!)!
+
+switch a {
+case "add":
+    add(a: b, b: c)
+case "subtract":
+    subtract(a: b, b: c)
+case "divide":
+    divide(a: b, b: c)
+case "multiply":
+    multiply(a: b, b: c)
+default:
+    break 
+}
